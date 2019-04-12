@@ -48,7 +48,7 @@ task makeclasses(dependsOn:compileJava, type:Copy) {
 task makelib(type:Sync) {
 	from configurations.runtime.minus(configurations.providedCompile)
 	into 'dist/WEB-INF/lib'
-}  
+}   
 
 // make dist web
 task makeweb(type: Copy) {
